@@ -1,0 +1,992 @@
+:root {
+    --primary: #41C5B8;
+    --off-white: #FFF5EB;
+    --matt-black: #333333;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+}
+
+h4,
+h4 a{
+    font-size: 22px;
+}
+
+p,
+a,
+span {
+    font-family: "Telex", serif;
+    text-decoration: none;
+    /* font-size: 12px; */
+    /* line-height: 24px; */
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.ac-post-wrapper {
+    margin: 50px 0;
+    max-width: 1350px;
+    margin: auto;
+}
+
+.slider-breaker {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.slider-breaker p {
+    color: var(--primary);
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+    border-top: 3px solid var(--matt-black);
+    border-bottom: 3px solid var(--matt-black);
+    padding: 25px 0;
+}
+
+
+/* ac-post-skin1 css starts here */
+
+.ac-post-diagonal-split .ac-post-content-wrapper {
+    position: relative;
+    overflow: hidden;
+    color: var(--off-white);
+    height: 550px;
+    margin: 30px;
+    border-radius: 20px;
+}
+
+.ac-post-diagonal-split .ac-post-img {
+    height: 50%;
+}
+
+.ac-post-diagonal-split .ac-post-content {
+    height: 50%;
+    padding: 5px 20px 20px 20px;
+    z-index: 1;
+    position: relative;
+    top: -30px;
+}
+
+.ac-post-diagonal-split .ac-post-img::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 65%;
+    width: 100%;
+    background-color: var(--matt-black);
+    clip-path: polygon(0% 10%,
+            100% 0%,
+            100% 100%,
+            0% 100%);
+}
+
+.ac-post-diagonal-split .ac-post-meta,
+.ac-post-diagonal-split .ac-post-catagory ul {
+    display: flex;
+    gap: 5px;
+    text-transform: uppercase;
+    margin: 0 0 5px 0;
+    font-size: 12px;
+}
+
+.ac-post-diagonal-split .ac-post-meta,
+.ac-post-diagonal-split .ac-post-catagory ul a {
+    display: flex;
+    gap: 5px;
+    text-transform: uppercase;
+    margin: 0 0 5px 0;
+    color: var(--off-white);
+}
+
+.ac-post-diagonal-split .ac-post-heading a {
+    margin: 0 0 15px 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    color: var(--off-white);
+}
+
+.ac-post-diagonal-split .ac-post-meta {
+    display: none;
+}
+
+.ac-post-diagonal-split .ac-post-description p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    line-height: 24px;
+}
+
+.ac-post-diagonal-split .ac-post-button {
+    margin-top: 15px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.ac-post-diagonal-split .ac-post-button .ac-read {
+    border: 1px solid var(--white);
+    color: var(--white);
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+.ac-post-diagonal-split .ac-post-button .ac-read svg {
+    display: none;
+}
+
+
+/* ac-post-skin1 css ends here */
+
+
+/* ac-post-skin2 css starts here */
+
+.ac-post-classic .ac-post-content-wrapper {
+    position: relative;
+    overflow: hidden;
+    color: var(--matt-black);
+    height: 650px;
+    margin: 30px;
+    background-color: var(--off-white);
+}
+
+.ac-post-classic .ac-post-img {
+    height: 50%;
+    max-height: 300px;
+}
+
+.ac-post-classic .ac-post-content {
+    height: 50%;
+    padding: 20px;
+    z-index: 1;
+    position: relative;
+}
+
+.ac-post-classic .ac-post-meta,
+.ac-post-classic .ac-post-catagory ul {
+    display: flex;
+    gap: 5px;
+    text-transform: uppercase;
+    margin: 0 0 15px 0;
+    font-size: 12px;
+    border-bottom: 1px solid var(--primary);
+    padding: 0 0 10px 0;
+}
+
+.ac-post-classic .ac-post-catagory ul span {
+    color: var(--matt-black);
+    transition: all 0.3s ease-in-out;
+}
+
+.ac-post-classic .ac-post-catagory ul span:not(.ac-cat-separator):hover {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.ac-post-classic .ac-post-heading a {
+    margin: 0 0 15px 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    color: var(--black);
+    transition: all 0.3s ease-in-out;
+}
+
+.ac-post-classic .ac-post-heading a:hover {
+    color: var(--matt-black);
+    text-decoration-line: underline;
+    text-decoration-style: double;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+}
+
+.ac-post-classic .ac-post-meta {
+    display: none;
+}
+
+.ac-post-classic .ac-post-description p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    line-height: 24px;
+}
+
+.ac-post-classic .ac-post-button {
+    padding: 15px 0 0 0;
+}
+
+.ac-post-classic .ac-post-button .ac-read {
+    color: var(--primary);
+    position: relative;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.ac-post-classic .ac-post-button .ac-read::after {
+    color: var(--primary);
+    position: relative;
+}
+
+.ac-post-classic .ac-post-button .ac-read svg {
+    font-size: 12px;
+    margin-left: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.ac-post-classic .ac-post-button .ac-read:hover svg {
+    margin-left: 10px;
+}
+
+
+/* ac-post-skin2 css ends here */
+
+/* ac post Integrated-meta css start*/
+
+/* arrows and dotrs css starts */
+
+.ac-post-Integrated-meta .slick-prev:before,
+.ac-post-Integrated-meta .slick-next:before {
+    font-size: 30px;
+}
+
+.ac-post-Integrated-meta .slick-next {
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.ac-post-Integrated-meta .slick-prev {
+    top: 0;
+    left: auto;
+    right: 0;
+    z-index: 1;
+    margin-right: 51px;
+}
+
+.ac-post-Integrated-meta .slick-arrow {
+    background-color: var(--primary);
+    padding: 25px;
+    /* border: 1px solid var(--matt-black); */
+    border-radius: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ac-post-Integrated-meta .slick-arrow:hover {
+    background-color: var(--matt-black);
+    /* border: 1px solid var(--primary); */
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+
+.ac-post-Integrated-meta .slick-next:before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f105";
+    font-weight: 900;
+
+}
+
+.ac-post-Integrated-meta .slick-prev:before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f104";
+    font-weight: 900;
+}
+
+.ac-post-Integrated-meta .slick-prev:before,
+.ac-post-Integrated-meta .slick-next:before {
+    color: var(--off-white);
+}
+
+.ac-post-Integrated-meta .slick-dots {
+    bottom: 0;
+    /* margin-bottom: 45px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 11;
+}
+
+.ac-post-Integrated-meta .slick-dots li {
+    padding: 0;
+    height: 5px;
+    width: 30px;
+}
+
+.ac-post-Integrated-meta .slick-dots li button {
+    padding: 0;
+    height: 5px;
+    width: 30px;
+}
+
+.ac-post-Integrated-meta .slick-dots li button::before {
+    content: '';
+    height: 3px;
+    width: 30px;
+    background-color: var(--matt-black);
+    border-radius: 10px;
+}
+
+/* arrows and dotrs css ends */
+
+.ac-post-Integrated-meta .ac-post-content-wrapper {
+    margin: 30px 20px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.ac-post-Integrated-meta .ac-post-img {
+    width: 100%;
+    height: 250px;
+}
+
+.ac-post-Integrated-meta .ac-post-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.ac-post-Integrated-meta .ac-post-content {
+    padding: 50px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 10px;
+}
+
+.ac-post-Integrated-meta .ac-post-catagory ul {
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+    list-style: none;
+}
+
+.ac-post-Integrated-meta .ac-post-catagory ul span {
+    color: var(--matt-black);
+    transition: all 0.3s ease-in-out;
+}
+
+.ac-post-Integrated-meta .ac-post-catagory ul span:not(.ac-cat-separator) {
+    color: var(--matt-black);
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 6px;
+    transition: all 0.3s ease-in-out;
+}
+
+.ac-post-Integrated-meta .ac-post-catagory ul span:not(.ac-cat-separator):hover {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.ac-post-Integrated-meta .ac-post-meta {
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    top: -20px;
+    left: 5%;
+    right: 5%;
+    background-color: var(--matt-black);
+    width: 90%;
+    padding: 10px 0;
+    border-radius: 10px;
+    color: var(--off-white);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.ac-post-Integrated-meta .ac-post-meta .ac-post-author a {
+    color: var(--off-white);
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+}
+
+.ac-post-Integrated-meta .ac-post-meta .ac-post-author a:hover {
+    color: var(--primary);
+}
+
+.ac-post-Integrated-meta .ac-post-heading a {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    color: var(--black);
+    transition: all 0.3s ease-in-out;
+    padding-bottom: 5px;
+}
+
+.ac-post-Integrated-meta .ac-post-heading a:hover {
+    color: var(--primary);
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 6px;
+}
+
+.ac-post-Integrated-meta .ac-post-description {
+    margin: 10px 0 15px 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    line-height: 24px;
+}
+
+.ac-post-Integrated-meta .ac-post-button {
+    position: relative;
+    width: fit-content;
+    padding-bottom: 8px;
+    font-size: 16px;
+}
+
+.ac-post-Integrated-meta .ac-post-button a {
+    color: var(--matt-black);
+    text-decoration: none;
+}
+
+.ac-post-Integrated-meta .ac-post-button::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 50%;
+    border-radius: 20px;
+    background-color: var(--primary);
+    transition: all 0.3s ease-in-out;
+}
+
+.ac-post-Integrated-meta .ac-post-button:hover:before {
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.ac-post-Integrated-meta .ac-post-button a svg {
+    display: none;
+}
+
+/* ac post Integrated-meta css ends*/
+
+/* ac post horizontal-split css start*/
+
+/* arrows and dotrs css starts */
+
+.ac-post-horizontal-split .slick-prev:before,
+.ac-post-horizontal-split .slick-next:before {
+    font-size: 30px;
+}
+
+.ac-post-horizontal-split .slick-next {
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.ac-post-horizontal-split .slick-prev {
+    top: 0;
+    left: auto;
+    right: 0;
+    z-index: 1;
+    margin-right: 51px;
+}
+
+.ac-post-horizontal-split .slick-arrow {
+    background-color: var(--primary);
+    padding: 25px;
+    /* border: 1px solid var(--matt-black); */
+    border-radius: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ac-post-horizontal-split .slick-arrow:hover {
+    background-color: var(--matt-black);
+    /* border: 1px solid var(--primary); */
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+
+.ac-post-horizontal-split .slick-next:before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f105";
+    font-weight: 900;
+
+}
+
+.ac-post-horizontal-split .slick-prev:before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f104";
+    font-weight: 900;
+}
+
+.ac-post-horizontal-split .slick-prev:before,
+.ac-post-horizontal-split .slick-next:before {
+    color: var(--off-white);
+}
+
+.ac-post-horizontal-split .slick-dots {
+    bottom: 0;
+    /* margin-bottom: 45px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 11;
+}
+
+.ac-post-horizontal-split .slick-dots li {
+    padding: 0;
+    height: 5px;
+    width: 30px;
+}
+
+.ac-post-horizontal-split .slick-dots li button {
+    padding: 0;
+    height: 5px;
+    width: 30px;
+}
+
+.ac-post-horizontal-split .slick-dots li button::before {
+    content: '';
+    height: 3px;
+    width: 30px;
+    background-color: var(--matt-black);
+    border-radius: 10px;
+}
+
+/* arrows and dotrs css ends */
+
+.ac-post-horizontal-split .ac-post-content-wrapper {
+    margin: 50px 20px;
+    display: grid;
+    gap: 30px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    padding: 20px;
+    border-radius: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.ac-post-horizontal-split .ac-post-img {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.ac-post-horizontal-split .ac-post-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.ac-post-horizontal-split .ac-post-content-wrapper:hover .ac-post-img img {
+    transform: scale(1.2);
+    transition: all 0.5s ease-in-out;
+}
+
+.ac-post-horizontal-split .ac-post-content {
+    padding: 20px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 10px;
+    background-color: var(--white);
+}
+
+.ac-post-horizontal-split .ac-post-catagory {
+    /* order: 1; */
+    display: none;
+}
+
+.ac-post-horizontal-split .ac-post-catagory ul {
+    display: flex;
+    gap: 5px;
+    list-style: none;
+}
+
+.ac-post-horizontal-split .ac-post-meta {
+    display: flex;
+    gap: 5px;
+    order: 1;
+    font-size: 14px;
+}
+
+.ac-post-horizontal-split .ac-post-date {
+    display: flex;
+    gap: 10px;
+}
+
+.ac-post-horizontal-split .ac-post-author a {
+    color: var(--primary);
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+}
+
+.ac-post-horizontal-split .ac-post-author a:hover {
+    color: var(--matt-black);
+}
+
+.ac-post-horizontal-split .ac-post-heading {
+    order: 2;
+}
+
+.ac-post-horizontal-split .ac-post-heading a {
+    color: var(--matt-black);
+    transition: all 0.3s ease-in-out;
+}
+
+.ac-post-horizontal-split .ac-post-heading a:hover {
+    color: var(--black);
+}
+
+.ac-post-horizontal-split .ac-post-description {
+    margin: 10px 0 15px 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    overflow: hidden;
+    line-height: 24px;
+    order: 4;
+}
+
+.ac-post-horizontal-split .ac-post-button {
+    width: fit-content;
+    padding-bottom: 8px;
+    font-size: 16px;
+    order: 4;
+}
+
+.ac-post-horizontal-split .ac-post-button a {
+    position: relative;
+    color: var(--matt-black);
+    text-decoration: none;
+    border: none;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+
+.ac-post-horizontal-split .ac-post-button a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-bottom: 2px solid var(--matt-black);
+    transform: scale(0);
+    transition: all 300ms ease;
+}
+
+.ac-post-horizontal-split .ac-post-button a:hover::before {
+    transform: scale(1);
+    transition: all 300ms ease;
+}
+
+
+/* ac post horizontal-split css ends*/
+
+
+/* ac post horizontal-split css ends*/
+
+.ac-post-floating-date-block .ac-post-content-wrapper {
+    margin: 30px 20px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+}
+
+.ac-post-floating-date-block .ac-post-img {
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.ac-post-floating-date-block .ac-post-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.ac-post-floating-date-block .ac-post-catagory,
+.ac-post-floating-date-block .ac-meta-separator,
+.ac-post-floating-date-block .ac-post-description {
+    display: none;
+}
+
+.ac-post-floating-date-block .ac-post-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 20px 0;
+}
+
+.ac-post-floating-date-block .ac-post-meta .ac-post-author a {
+    color: var(--matt-black);
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+}
+
+.ac-post-floating-date-block .ac-post-meta .ac-post-author a:hover {
+    color: var(--primary);
+}
+
+.ac-post-floating-date-block .ac-post-meta .ac-post-date {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    width: fit-content;
+    background-color: var(--matt-black);
+    padding: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: var(--off-white);
+    border-radius: 0 0 5px 5px;
+}
+
+.ac-post-floating-date-block .ac-post-meta .ac-post-date .ac-month {
+    font-size: 18px;
+}
+
+.ac-post-floating-date-block .ac-post-meta .ac-post-date .ac-day {
+    font-size: 28px;
+}
+
+.ac-post-floating-date-block .ac-post-heading {
+    order: 1;
+}
+
+.ac-post-floating-date-block .ac-post-meta {
+    order: 2;
+    border-bottom: 1px solid #e9e9e9;
+    border-top: 1px solid #e9e9e9;
+    padding: 10px 0;
+}
+
+.ac-post-floating-date-block .ac-post-heading a {
+    margin: 0 0 15px 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    color: var(--black);
+    transition: all 0.3s ease-in-out;
+    padding-bottom: 5px;
+}
+
+.ac-post-floating-date-block .ac-post-heading a:hover {
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 6px;
+}
+
+.ac-post-floating-date-block .ac-post-button {
+    text-align: center;
+    order: 3;
+    margin-top: 20px;
+}
+
+.ac-post-floating-date-block .ac-post-button a {
+    color: var(--primary);
+    border-bottom: 1px solid var(--matt-black);
+    transition: all 0.3s ease-in-out;
+}
+
+.ac-post-floating-date-block .ac-post-button a:hover {
+    color: var(--matt-black);
+    border-bottom: 1px solid var(--primary);
+}
+
+.ac-post-floating-date-block .ac-post-button .ac-read svg {
+    display: none !important;
+}
+
+
+/* ac post horizontal-split css ends*/
+
+/* ac post horizontal-split css ends*/
+
+.ac-post-author-spotlight .ac-post-content-wrapper {
+    margin: 30px 20px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.ac-post-author-spotlight .ac-post-img {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.ac-post-author-spotlight .ac-post-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.ac-post-author-spotlight .ac-post-catagory ul {
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+    list-style: none;
+    border-bottom: 1px solid var(--primary);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.ac-post-author-spotlight .ac-meta-separator {
+    display: none;
+}
+
+.ac-post-author-spotlight .ac-post-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 10px 0;
+    position: relative;
+}
+
+.ac-post-author-spotlight .ac-post-meta{
+    display: flex;
+    flex-direction: column;
+}
+
+.ac-post-author-spotlight .ac-post-meta .ac-post-date {
+    color: var(--white);
+    font-size: 14px;
+    order: 2;
+}
+.ac-post-author-spotlight .ac-post-meta .ac-post-author a {
+    color: var(--white);
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+    order: 1;
+}
+
+.ac-post-author-spotlight .ac-post-meta .ac-post-author a:hover {
+    color: var(--primary);
+}
+
+.ac-post-author-spotlight .ac-post-meta .ac-post-date .ac-month {
+    font-size: 18px;
+}
+
+.ac-post-author-spotlight .ac-post-meta .ac-post-date .ac-day {
+    font-size: 28px;
+}
+
+.ac-post-author-spotlight .ac-post-heading a {
+    margin: 0 0 15px 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    color: var(--black);
+    transition: all 0.3s ease-in-out;
+    padding-bottom: 5px;
+}
+
+.ac-post-author-spotlight .ac-post-heading a:hover {
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 6px;
+}
+
+.ac-post-author-spotlight .ac-post-description{
+    line-height: 24px;
+}
+
+.ac-post-author-spotlight .ac-post-button a {
+    color: var(--white);
+}
+
+
+.ac-post-author-spotlight .ac-post-button .ac-read span {
+    display: none !important;
+}
+
+.ac-post-author-spotlight .ac-post-author-meta {
+    order: 4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    background-color: var(--matt-black);
+    padding: 15px 25px;
+    border-radius: 10px;
+}
+
+.ac-post-author-spotlight .ac-post-author-meta-inner{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ac-post-author-spotlight .ac-post-author-img{
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.ac-post-author-spotlight .ac-post-author-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+/* ac post horizontal-split css ends*/
