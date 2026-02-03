@@ -4,14 +4,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Altimate Carousel</title>
+    <style>
+        body {
+            height: 100%;
+            width: 100%;
+            background-color: aliceblue;
+            margin: 0;
+            padding: 0;
+            color: #333333;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .ac-container-wrapper {
+            max-width: 1350px;
+            height: 100vh;
+            max-height: 800px;
+            width: 90%;
+            margin: auto;
+            position: relative;
+        }
+
+        .ac-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .ac-container h1 {
+            font-size: 52px;
+            text-align: center;
+            position: relative;
+            width: fit-content;
+            padding-bottom: 10px;
+            color: #333333;
+        }
+
+        .ac-container h1::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 10px;
+            width: 100%;
+            scale: 0.5;
+            background-color: #333333;
+            transition: all 0.3s ease-in-out;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .ac-container p {
+            font-size: 26px;
+            text-align: center;
+            line-height: 34px;
+        }
+
+        .nav-link {
+            border-top: solid 1px #333333;
+            border-bottom: solid 1px #333333;
+            padding: 20px 0;
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .ac-container a {
+            text-decoration: none;
+            position: relative;
+            width: fit-content;
+            color: #56535e;
+            padding-bottom: 3px;
+            font-size: 20px;
+            text-transform: uppercase;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .ac-container a:hover {
+            color: #41C5B8;
+        }
+
+        .ac-container a::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 2px;
+            width: 50%;
+            background-color: #333333;
+            transition: all 0.3s ease-in-out;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .ac-container a:hover::after {
+            width: 100%;
+            background-color: #41C5B8;
+        }
+    </style>
 </head>
 
 <body>
-    <div>
-        <button>
-            <a href="/Webpage/post.html">Links to open the post</a>
-        </button>
+    <div class="ac-container-wrapper">
+        <div class="ac-container">
+            <h1>Welcome To The Altimate Carousel</h1>
+            <p>Here you can discover a variety of altimate carousel designs, featuring eye-catching layouts and
+                versatile styles to
+                enhance your content </p>
+            <div class="nav-link">
+                <a href="/Webpage/post.html">Post Carousel</a>
+            </div>
+
+        </div>
+
     </div>
 </body>
 

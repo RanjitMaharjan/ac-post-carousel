@@ -81,6 +81,93 @@ ol {
 
 /* ac-post-skin1 css starts here */
 
+/* arrows and dotrs css starts */
+
+.ac-post-diagonal-split .slick-prev:before,
+.ac-post-diagonal-split .slick-next:before {
+    font-size: 30px;
+}
+
+.ac-post-diagonal-split .slick-next {
+    top: 50%;
+    right: -50px;
+    z-index: 1;
+}
+
+.ac-post-diagonal-split .slick-prev {
+    top: 50%;
+    left: -50px;
+    right: 0;
+    z-index: 1;
+    margin-right: 51px;
+}
+
+.ac-post-diagonal-split .slick-arrow {
+    background-color: var(--primary);
+    padding: 25px;
+    /* border: 1px solid var(--matt-black); */
+    border-radius: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.ac-post-diagonal-split .slick-arrow:hover {
+    background-color: var(--matt-black);
+    /* border: 1px solid var(--primary); */
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+
+.ac-post-diagonal-split .slick-next:before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-style: normal;
+    content: "\f105";
+}
+
+.ac-post-diagonal-split .slick-prev:before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f104";
+    font-weight: 900;
+}
+
+.ac-post-diagonal-split .slick-prev:before,
+.ac-post-diagonal-split .slick-next:before {
+    color: var(--off-white);
+}
+
+.ac-post-diagonal-split .slick-dots {
+    bottom: 0;
+    /* margin-bottom: 45px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 11;
+}
+
+.ac-post-diagonal-split .slick-dots li {
+    padding: 0;
+    height: 10px;
+    width: 10px;
+}
+
+.ac-post-diagonal-split .slick-dots li button {
+    padding: 0;
+    height: 10px;
+    width: 10px;
+}
+
+.ac-post-diagonal-split .slick-dots li button::before {
+    content: '';
+    height: 10px;
+    width: 10px;
+    background-color: var(--matt-black);
+    border-radius: 50%;
+}
+
+/* arrows and dotrs css ends */
+
 .ac-post-diagonal-split .ac-post-content-wrapper {
     position: relative;
     overflow: hidden;
@@ -134,13 +221,38 @@ ol {
     color: var(--off-white);
 }
 
+.ac-post-diagonal-split .ac-post-heading {
+    margin: 0 0 25px 0;
+}
+
 .ac-post-diagonal-split .ac-post-heading a {
-    margin: 0 0 15px 0;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
-    overflow: hidden;
+    /* overflow: hidden;/ */
     color: var(--off-white);
+}
+
+.ac-post-diagonal-split .ac-post-heading a {
+    position: relative;
+    display: inline;
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--off-white)), to(var(--off-white)));
+    background-image: -webkit-linear-gradient(left, var(--off-white) 0%, var(--off-white) 100%);
+    background-image: -o-linear-gradient(left, var(--off-white) 0%, var(--off-white) 100%);
+    background-image: linear-gradient(to right, var(--off-white) 0%, var(--off-white) 100%);
+    background-size: 0px 2px;
+    background-position: 0px 95%;
+    -webkit-transition: background-size 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s;
+    -o-transition: background-size 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s;
+    transition: background-size 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s;
+    padding-bottom: 2px;
+    background-repeat: no-repeat;
+    color: inherit;
+    margin-bottom: 20px;
+}
+
+.ac-post-diagonal-split .ac-post-heading a:hover {
+    background-size: 100% 2px;
 }
 
 .ac-post-diagonal-split .ac-post-meta {
@@ -167,6 +279,13 @@ ol {
     color: var(--white);
     padding: 5px 20px;
     border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.ac-post-diagonal-split .ac-post-button .ac-read:hover {
+    border: 1px solid var(--primary);
+    color: var(--matt-black);
+    background-color: var(--off-white);
 }
 
 .ac-post-diagonal-split .ac-post-button .ac-read svg {
@@ -178,6 +297,93 @@ ol {
 
 
 /* ac-post-skin2 css starts here */
+
+/* arrows and dotrs css starts */
+
+.ac-post-classic .slick-prev:before,
+.ac-post-classic .slick-next:before {
+    font-size: 30px;
+}
+
+.ac-post-classic .slick-next {
+    top: 50%;
+    right: -50px;
+    z-index: 1;
+}
+
+.ac-post-classic .slick-prev {
+    top: 50%;
+    left: -50px;
+    right: 0;
+    z-index: 1;
+    margin-right: 51px;
+}
+
+.ac-post-classic .slick-arrow {
+    background-color: var(--primary);
+    padding: 25px;
+    /* border: 1px solid var(--matt-black); */
+    border-radius: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.ac-post-classic .slick-arrow:hover {
+    background-color: var(--matt-black);
+    /* border: 1px solid var(--primary); */
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+
+.ac-post-classic .slick-next:before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-style: normal;
+    content: "\f105";
+}
+
+.ac-post-classic .slick-prev:before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f104";
+    font-weight: 900;
+}
+
+.ac-post-classic .slick-prev:before,
+.ac-post-classic .slick-next:before {
+    color: var(--off-white);
+}
+
+.ac-post-classic .slick-dots {
+    bottom: 0;
+    /* margin-bottom: 45px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 11;
+}
+
+.ac-post-classic .slick-dots li {
+    padding: 0;
+    height: 10px;
+    width: 10px;
+}
+
+.ac-post-classic .slick-dots li button {
+    padding: 0;
+    height: 10px;
+    width: 10px;
+}
+
+.ac-post-classic .slick-dots li button::before {
+    content: '';
+    height: 10px;
+    width: 10px;
+    background-color: var(--matt-black);
+    border-radius: 50%;
+}
+
+/* arrows and dotrs css ends */
 
 .ac-post-classic .ac-post-content-wrapper {
     position: relative;
@@ -734,6 +940,91 @@ ol {
 
 /* ac post horizontal-split css ends*/
 
+/* arrows and dotrs css starts */
+
+.ac-post-floating-date-block .slick-prev:before,
+.ac-post-floating-date-block .slick-next:before {
+    font-size: 30px;
+}
+
+.ac-post-floating-date-block .slick-next {
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.ac-post-floating-date-block .slick-prev {
+    top: 0;
+    left: auto;
+    right: 0;
+    z-index: 1;
+    margin-right: 51px;
+}
+
+.ac-post-floating-date-block .slick-arrow {
+    background-color: var(--primary);
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.ac-post-floating-date-block .slick-arrow:hover {
+    background-color: var(--matt-black);
+    /* border: 1px solid var(--primary); */
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+
+.ac-post-floating-date-block .slick-next:before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-style: normal;
+    content: "\f105";
+}
+
+.ac-post-floating-date-block .slick-prev:before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f104";
+    font-weight: 900;
+}
+
+.ac-post-floating-date-block .slick-prev:before,
+.ac-post-floating-date-block .slick-next:before {
+    color: var(--off-white);
+}
+
+.ac-post-floating-date-block .slick-dots {
+    bottom: 0;
+    /* margin-bottom: 45px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 11;
+}
+
+.ac-post-floating-date-block .slick-dots li {
+    padding: 0;
+    height: 10px;
+    width: 10px;
+}
+
+.ac-post-floating-date-block .slick-dots li button {
+    padding: 0;
+    height: 10px;
+    width: 10px;
+}
+
+.ac-post-floating-date-block .slick-dots li button::before {
+    content: '';
+    height: 10px;
+    width: 10px;
+    background-color: var(--matt-black);
+    border-radius: 50%;
+}
+
+/* arrows and dotrs css ends */
+
 .ac-post-floating-date-block .ac-post-content-wrapper {
     margin: 30px 20px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
@@ -875,6 +1166,91 @@ ol {
 /* ac post horizontal-split css ends*/
 
 /* ac post horizontal-split css ends*/
+
+/* arrows and dotrs css starts */
+
+.ac-post-author-spotlight .slick-prev:before,
+.ac-post-author-spotlight .slick-next:before {
+    font-size: 30px;
+}
+
+.ac-post-author-spotlight .slick-next {
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.ac-post-author-spotlight .slick-prev {
+    top: 0;
+    left: auto;
+    right: 0;
+    z-index: 1;
+    margin-right: 51px;
+}
+
+.ac-post-author-spotlight .slick-arrow {
+    background-color: var(--primary);
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.ac-post-author-spotlight .slick-arrow:hover {
+    background-color: var(--matt-black);
+    /* border: 1px solid var(--primary); */
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+
+.ac-post-author-spotlight .slick-next:before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-style: normal;
+    content: "\f105";
+}
+
+.ac-post-author-spotlight .slick-prev:before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f104";
+    font-weight: 900;
+}
+
+.ac-post-author-spotlight .slick-prev:before,
+.ac-post-author-spotlight .slick-next:before {
+    color: var(--off-white);
+}
+
+.ac-post-author-spotlight .slick-dots {
+    bottom: 0;
+    /* margin-bottom: 45px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 11;
+}
+
+.ac-post-author-spotlight .slick-dots li {
+    padding: 0;
+    height: 10px;
+    width: 10px;
+}
+
+.ac-post-author-spotlight .slick-dots li button {
+    padding: 0;
+    height: 10px;
+    width: 10px;
+}
+
+.ac-post-author-spotlight .slick-dots li button::before {
+    content: '';
+    height: 10px;
+    width: 10px;
+    background-color: var(--matt-black);
+    border-radius: 50%;
+}
+
+/* arrows and dotrs css ends */
 
 .ac-post-author-spotlight .ac-post-content-wrapper {
     margin: 30px 20px;
